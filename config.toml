@@ -1,4 +1,4 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "Hugo Static Site Test"
+baseurl = "http://phil.ashbysoft.com/hugo-test"
 theme = "ananke"
