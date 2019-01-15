@@ -1,4 +1,4 @@
 ---
 title: 'Tom''s a grad :)'
 ---
-![Tom & Amy](/images/upload/img_4685_th.jpg)
+![Tom & Amy](/hugo-test/images/upload/img_4685_th.jpg)
