@@ -1,7 +1,8 @@
 languageCode = "en-us"
 title = "Hugo Static Site Test"
-baseurl = "https://phil.ashbysoft.com/hugo-test"
-theme = "ananke"
+baseurl = "https://phil.ashbysoft.com/hugo-test/"
+#theme = "ananke"
+theme = "m10c"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
