@@ -24,8 +24,8 @@ enableRobotsTXT = true
   author = "Phil & Stu"
   description = "The home of Ashbysoft."
   [params.style]
-    darkestColor = "#003399"
-    darkColor = "#6487dc"
-    lightColor = "#8caae6"
+    darkestColor = "#002255"
+    darkColor = "#003399"
+    lightColor = "#e5e5e5"
     lightestColor = "#ffffff"
     primaryColor = "#ffffff"
