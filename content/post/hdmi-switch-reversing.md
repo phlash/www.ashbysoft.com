@@ -112,4 +112,4 @@ first time, I have a [flash dump](/hugo-test/images/upload/dump.bin).
 
 ### That's it for now
 
-Code [here in github](https://github.com/phlash/EPFtools "wikilink").
+Code [here in github](https://github.com/phlash/EPFtools).
