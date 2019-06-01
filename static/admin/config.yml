@@ -14,6 +14,8 @@ collections:
     folder: "content/post"
     create: true
     slug: "{{slug}}"
+    identifier_field: "title"
     fields:
             - { name: "title", label: "Title", widget: "string" }
+            - { name: "date", label: "Published", widget: "datetime" }
             - { name: "body", label: "Body", widget: "markdown" }
