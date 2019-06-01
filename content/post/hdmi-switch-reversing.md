@@ -1,6 +1,6 @@
 ---
-title: "HDMI Switch Reversing"
-date: 2017-05-26T22:33:45Z
+title: HDMI Switch Reversing
+date: 2017-05-26T22:33:45.000Z
 ---
 
 PortTa HDMI Switch 4:1 with Audio
@@ -22,7 +22,7 @@ up :) Turns out a couple of folks have taken a look inside similar
 devices, mostly to hack round HDCP protection, so I have some idea what
 to expect and indeed it's pretty unexciting:
 
-[](https://ashbysoft.com/wiki/HDMI%20Switch%20Reversing?action=AttachFile&do=get&target=IMG_20170526_231505.jpg "wikilink")
+[![HDMI Switch PCB](/hugo-test/images/upload/IMG_20170526_231505.png)](/hugo-test/images/upload/IMG_20170526_231505.jpg)
 
 There's a couple of devices from Explore Microelectronics that do the
 work (HDMI switch, MCU), an SPI audio DAC to provide analogue outputs
@@ -108,7 +108,7 @@ the serial port I/O I get the following to read the device:
       - write 85 (dec)
 
 which seems easy enough to replicate in clean code, and indeed it worked
-first time, I have a [flash dump](attachment:dump.bin "wikilink").
+first time, I have a [flash dump](/hugo-test/images/upload/dump.bin).
 
 ### That's it for now
 
