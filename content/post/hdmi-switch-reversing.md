@@ -22,6 +22,7 @@ up :) Turns out a couple of folks have taken a look inside similar
 devices, mostly to hack round HDCP protection, so I have some idea what
 to expect and indeed it's pretty unexciting:
 
+[![HDMI Switch PCB](/hugo-test/images/upload/IMG_20170526_231505.png)](/hugo-test/images/upload/IMG_20170526_231505.jpg)
 
 There's a couple of devices from Explore Microelectronics that do the
 work (HDMI switch, MCU), an SPI audio DAC to provide analogue outputs
@@ -107,7 +108,7 @@ the serial port I/O I get the following to read the device:
       - write 85 (dec)
 
 which seems easy enough to replicate in clean code, and indeed it worked
-first time, I have a [flash dump](attachment:dump.bin "wikilink").
+first time, I have a [flash dump](/hugo-test/images/upload/dump.bin).
 
 ### That's it for now
 
