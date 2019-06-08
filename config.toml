@@ -1,4 +1,4 @@
-# IMPORTANT: If using any theme, with SCCS files, you MUST use hugo-extended
+# IMPORTANT: If using any theme, with SCSS files, you MUST use hugo-extended
 # otherwise you will spend an hour wondering why you cannot change any colours..
 # while hugo itself says /nothing/ about being unable to do sh*t for you. Grr :(
 # https://gohugo.io/troubleshooting/faq/
@@ -8,9 +8,10 @@ title = "(Ashbysoft *)"
 baseurl = "https://phil.ashbysoft.com/hugo-test/"
 theme = "m10c"
 
+cleandestinationdir = true
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
+#SectionPagesMenu = "main"
 Paginate = 10
 googleAnalytics = ""
 enableRobotsTXT = true
