@@ -1,0 +1,8 @@
+While looking for a usable cheap FXO port to connect the PSTN to his
+home server, [Phil](Phlash "wikilink") came across the OBIHAI product
+line, and bought a couple of toys to play with: an
+[OBIHAI110](http://www.obihai.com/docs/OBi110DS.pdf "wikilink") voice
+service bridge, which will do pretty much what\'s required without the
+server attached, and an
+[ObiLINE](http://www.obihai.com/obiline "wikilink") USB FXO adapter,
+which is [being reverse engineered](OBiLINE "wikilink") for fun :)

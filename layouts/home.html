@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    <div class="posts-list">
+        <span>||</span>
+      {{ range .Site.Menus.main }}
+        <span>
+            <a class="posts-list-item-title" href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a> ||
+        </span>
+      {{ end }}
+    </div>
+    {{ .Content }}
+  </article>
+{{ end }}

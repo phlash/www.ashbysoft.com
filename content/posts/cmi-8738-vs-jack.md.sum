@@ -1,0 +1,5 @@
+Whilst playing with Ubuntu on the PC in [TheShed](TheShed "wikilink")
+studio I finally discovered a way to [get digital audio input to work
+reliably](CMI-8738_vs_Jack "wikilink") using our impressively cheap
+CMI-8738 based Trust sound card (£15). This has been bugging me for
+*years*.

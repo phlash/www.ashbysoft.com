@@ -1,0 +1,6 @@
+So, Let\'s Encrypt has been working smoothly, renewing TLS certificates
+for us however, [Phil](Phlash "wikilink") noticed today that the
+certificate presented by this website was about to expire! It turns out
+that nginx hasn\'t been restarted since October (thanks Debian stable
+:)), so we\'ve added a post-hook to /etc/letsencrypt/cli.ini that does
+exactly that if new certs appear. Job done.

@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="posts-list">
+      {{ $paginator := .Paginate ( .Pages.ByLinkTitle ) }}
+      {{ range $index, $element := $paginator.Pages }}
+        <li class="posts-list-item">
+          <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="posts-list-item-description">
+            {{ partial "icon.html" (dict "ctx" $ "name" "clock") }} {{ .ReadingTime }} min read -
+            {{ .PublishDate.Format "Jan 2, 2006" }}
+          </span>
+          <span class="posts-list-item-description">
+            {{ .Summary }}
+          </span>
+        </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" $ }}
+  </article>
+{{ end }}

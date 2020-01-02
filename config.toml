@@ -16,6 +16,22 @@ Paginate = 10
 googleAnalytics = ""
 enableRobotsTXT = true
 
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    title = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "articles"
+    title = "Articles"
+    url = "/articles/"
+
+  [[menu.main]]
+    identifier = "posts"
+    title = "Posts"
+    url = "/posts/"
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
