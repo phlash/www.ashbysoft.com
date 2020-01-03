@@ -10,9 +10,9 @@ systems fields.
 People..
 ========
 
--   [Phil Ashby](Phlash "wikilink"): Currently a technical architect
+-   [Phil Ashby]({{< relref "phlash.md" >}}): Currently a technical architect
     with GB Group.
--   [Stuart Ashby](Slash "wikilink"): Currently the interactive TV
+-   [Stuart Ashby]({{< relref "slash.md" >}}): The recently retired interactive TV
     systems architect with NDS, a major technology provider to several
     large TV companies.
 
@@ -30,14 +30,13 @@ both areas, including:
 -   an Internet content filter (ICRAfilter)
 -   a professional hosting service portal (BT Selfcare)
 
-We enjoy working with the C/C++ and Java languages, where our depth of
-experience allows us to work with many target environments (eg: Windows,
-Linux, !VxWorks, Solaris, OpenTV), in particular hetrogeneous
+We enjoy working with the C/C++, Java & .NET ecosystems, where our depth
+of experience allows us to work with many target environments (eg: Windows,
+Linux, VxWorks, Solaris, OpenTV), in particular hetrogeneous
 distributed platforms.
 
-We also have some experience with assembly code on Intel x86
-[CPUs](CPUs "wikilink"), but prefer not to mention it in these 4th-gen
-language days ;-)
+We also have some experience with assembly code on Intel x86, SPARC & ARM
+CPUs, but prefer not to mention it in these 4th-gen language days ;-)
 
 Happy Customers..
 =================
@@ -59,6 +58,6 @@ such as:
 Contact Us
 ==========
 
-All enquiries for more information, or quotes: enquiries\@ashbysoft.com
+All enquiries for more information, or quotes: enquiries@ashbysoft.com
 
-Support requests for existing customers: support\@ashbysoft.com
+Support requests for existing customers: support@ashbysoft.com
