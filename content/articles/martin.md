@@ -1,17 +1,14 @@
 ---
 title: Martin
 date: 2009-04-14T11:34:27.000Z
+summary: Email <<martin@ashbysoft.com>>
 ---
-1.  1.  master-page:HomepageTemplate
-
-2.  format wiki
-
-Email: \<\<MailTo(martin AT SPAMFREE ashbysoft DOT com)\>\>
+Email: <<martin@ashbysoft.com>>
 
 Hi, I am Martin, member of the Ashby family, physics student at Warwick
 University, and wannabe musician. I will reply to email I find
 interesting, and I also have
-[facebook](http://www.facebook.com "wikilink").
+[facebook](https://www.facebook.com).
 
 Life:
 =====
@@ -27,7 +24,7 @@ Friends:
 
 I do have some, somewhere :) they know who they are and most of them
 have facebook or some means of communication available to them. Also I
-probably owe some of them money\...
+probably owe some of them money...
 
 Future:
 =======
@@ -49,7 +46,7 @@ have however been playing drums for nearly 8 years, guitar for 5 years
 and other instruments as and when people have shown me how to play them.
 I have featured in numerous musical escapades, most recently playing
 bass guitar and drums in
-[Quorn](http://www.myspace.com/thekamikazewatermelons "wikilink"). Since
+[Quorn](http://www.myspace.com/thekamikazewatermelons). Since
 joining Warwick Uni I have become an active member of the drumming
 society, and have developed a taste for samba.
 
@@ -57,10 +54,9 @@ Education:
 ==========
 
 I attended St Albans RC High school in Ipswich, including 6th form, and
-came out with some A levels and [GCSEs](GCSEs "wikilink"): A\'s in
-maths, more maths and physics, and a C in French. I am now on a 3 year
-course in Physics at [Warwick
-University](http://www2.warwick.ac.uk/ "wikilink") as previously
+came out with some A levels and GCSEs: A's in maths, more maths and
+physics, and a C in French. I am now on a 3 year course in Physics at
+[Warwick University](https://www2.warwick.ac.uk/) as previously
 mentioned, which is pretty interesting most of the time, and not too
 much work so far. This will change no doubt.
 
@@ -77,5 +73,3 @@ and other sports, and just random things that happen really.
 **NB**: If you are Carl Free, please get a life.
 
 ------------------------------------------------------------------------
-
-CategoryHomepage

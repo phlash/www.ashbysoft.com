@@ -1,6 +1,7 @@
 ---
 title: Simon
 date: 2010-12-04T23:22:49.000Z
+summary: email <<simon@ashbysoft.com>>
 ---
 SIMON
 =====
