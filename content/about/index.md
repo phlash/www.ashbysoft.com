@@ -1,7 +1,6 @@
 ---
 title: About (Ashbysoft *)
 date: 2013-10-28T12:02:38.000Z
-layout: single
 ---
 We are a small family software firm with a wide range of experience in
 embedded systems, personal computer applications, and distributed
