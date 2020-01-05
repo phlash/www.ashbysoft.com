@@ -8,3 +8,5 @@ You get best of breed cyber security :)
 Deployment is always easy (ZIP anyone?)
 
 Content management is nicely orthogonal to deployment.
+
+Version control is whatever you choose - sanity is best.
