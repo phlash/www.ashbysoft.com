@@ -2,9 +2,8 @@
 title: "Blackhole DNS"
 date: 2017-08-10T22:16:10Z
 summary: >
-  Over the last couple of months, [Phil](Phlash "wikilink") has been
-  helping [Joseph](Joseph "wikilink") track down a credential leak problem
-  using various [network defence techniques](Blackhole_DNS "wikilink").
+  Over the last couple of months, Phil has been helping Joseph track
+  down a credential leak problem using various network defence techniques.
 ---
 
 TL;DR gimme the scripts!
@@ -15,7 +14,7 @@ OK, chill... they're all here: <https://github.com/phlash/sinkhole>
 Err why?
 --------
 
-Since Christmas [Joseph](Joseph "wikilink") had noticed a number of
+Since Christmas [Joseph]({{< relref "joseph.md" >}}) had noticed a number of
 login attempts to Steam from weird locations, none successful due to
 using 2 factor authentication (yay!), but concerning as it's an
 indicator of compromise. Steam passwords getting stolen / ex-filtrated
@@ -81,7 +80,7 @@ Sinking traffic
 ---------------
 
 Rather than 'blackhole' DNS requests with a local IP(6) address,
-[Phil](Phlash "wikilink") thought it might be fun to operate a true
+[Phil]({{< relref "phlash.md" >}}) thought it might be fun to operate a true
 'sinkhole', that is, an endpoint for potentially malevolent TCP/IP
 traffic, so it can be captured and investigated. Given the nature of the
 traffic, it is unwise to use a real TCP/IP stack in a live system (there
@@ -92,7 +91,7 @@ begins:
 Inspired by articles like this
 <https://umbrella.cisco.com/blog/2014/02/28/dns-sinkhole/>, and starting
 with sample code like this <https://github.com/jedisct1/iptrap>
-[Phil](Phlash "wikilink") wrote a Python/Scapy based sinkhole program
+Phil wrote a Python/Scapy based sinkhole program
 (pysink.py in github repo). This worked, but Scapy is seriously slow and
 it ground our quad core server to a halt! A second try, this time using
 the raw socket API and writing all the protocol dissection required in
@@ -101,8 +100,8 @@ potentially dangerous traffic from normal stuff, we added a USB Ethernet
 adapter to the server (borrowed from the Wii!) but did not assign an
 address, thus traffic is not passed up/down to IP or higher layers,
 allowing the script to fake everything. We /did/ have to disable
-promiscuous ARP responses (/etc/sysctl.conf:
-net.ipv4.conf.all.arp\_ignore = 1), otherwise the ARP layer would
+promiscuous ARP responses (`/etc/sysctl.conf:
+net.ipv4.conf.all.arp_ignore = 1`), otherwise the ARP layer would
 respond to physical broadcast packets on the unaddressed interface.
 
 OK, we're terminating dodgy traffic to the point where we have the first
@@ -153,3 +152,11 @@ of patches (at least there is a roll up pack now!), we scanned the
 images using ClamAV to see if anything turned up. Sadly not, a few false
 positives discovered by putting hash values through VirusTotal, and that
 was it :(
+
+Resolution (by Valve)
+---------------------
+
+Trying to be helpful, we contacted Valve support and explained the issue
+to them, whereupon they asked "which account?"... Turns out Joseph had
+two, one active and one forgotton - guess which one had a known password in
+a data breach? NB: Never use the same email address for >1 account!
