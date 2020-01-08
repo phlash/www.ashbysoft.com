@@ -2,18 +2,19 @@
 title: HDMI Switch Reversing
 date: 2017-05-26T22:33:45.000Z
 summary: >
-  Long time, no blog entry, but [Phil](Phlash "wikilink") has been playing
-  with some toys since Christmas, including an [HDMI Switcher that almost
-  worked right](HDMI_Switch_Reversing "wikilink").
+  Long time, no blog entry, but Phil has been playing
+  with some toys since Christmas, including an
+  HDMI Switcher that almost worked right.
 ---
 
 PortTa HDMI Switch 4:1 with Audio
 ---------------------------------
 
-<https://www.port-ta.com/catalog/product/view/id/98/s/porttar-hdmitm-switch-switcher-4-port-v1-3-with-toslink-and-digital-coaxial/category/41/>
+(not actually this one but very similar, earlier model)
+<https://www.port-ta.com/switcher/hdmi-switcher/porttar-hdmitm-4x1-switcher-support-4kat30hz-with-extract-audio-and-audio-return-channel.html>
 
-[Phil](Phlash "wikilink") bought one of the above recently to avoid
-excessive grubbing about behind the TV changing over between XBox,
+[Phil]({{< relref "phlash.md" >}}) bought one of the above recently to
+avoid excessive grubbing about behind the TV changing over between XBox,
 Laptop(s), PS4, DVD player... you get the idea. It was cheap, it kind of
 worked. Unfortunately it had a couple of features that made it useless
 in my circumstances: no auto-switching to active input; overlapping IR
@@ -26,14 +27,14 @@ up :) Turns out a couple of folks have taken a look inside similar
 devices, mostly to hack round HDCP protection, so I have some idea what
 to expect and indeed it's pretty unexciting:
 
-[![HDMI Switch PCB](/hugo-test/images/upload/IMG_20170526_231505.png)](/hugo-test/images/upload/IMG_20170526_231505.jpg)
+[![HDMI Switch PCB](../../images/upload/IMG_20170526_231505.png)](../../images/upload/IMG_20170526_231505.jpg)
 
 There's a couple of devices from Explore Microelectronics that do the
 work (HDMI switch, MCU), an SPI audio DAC to provide analogue outputs
 and some lights and buttons. I grabbed the data sheets for the devices
 (or similar, as they're all closed source / NDA stuff) and after much
 Internet hunting found some Taiwanese programming tools written in
-C\#/.NET for XP that may work with the MCU (EPF021A).
+C#/.NET for XP that may work with the MCU (EPF021A).
 
 The plan:
 
@@ -43,7 +44,7 @@ The plan:
 `* write some open-source firmware to fix my bugs and anyone else's`
 
 The ICP protocol is badly documented (aka missing), so that needs
-reversing from the C\#/.NET tools; the PCB is missing the necessary
+reversing from the C#/.NET tools; the PCB is missing the necessary
 pull-up resistors for the serial port (normal anti-reversing / cost
 saving trick); I don't know if the ICP allows reading the firmware out
 (see below!).
@@ -81,7 +82,7 @@ phew!
 So what of the Taiwanese software? Well it works on XP or Win7, but
 sadly doesn't have the 'read device' button enabled. Time to pull it
 apart too. My tool of choice here is dotNetPeek from JetBrains, a
-completely awesome decompiler that turns out almost re-compilable C\#
+completely awesome decompiler that turns out almost re-compilable C#
 and a Visual Studio project to work in from the .exe - sweet :)
 
 Now I have a choice, try and fix their code to enable the device read
@@ -112,7 +113,7 @@ the serial port I/O I get the following to read the device:
       - write 85 (dec)
 
 which seems easy enough to replicate in clean code, and indeed it worked
-first time, I have a [flash dump](/hugo-test/images/upload/dump.bin).
+first time, I have a [flash dump](../../images/upload/dump.bin).
 
 ### That's it for now
 

@@ -29,7 +29,7 @@ enableRobotsTXT = true
 
   [[menu.main]]
     identifier = "posts"
-    title = "Posts"
+    title = "Blog"
     url = "/posts/"
 
 [sitemap]
