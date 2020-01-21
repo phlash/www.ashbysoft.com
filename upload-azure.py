@@ -8,6 +8,8 @@ from azure.storage.blob import BlockBlobService, ContentSettings
 
 container = '$web'
 publish = 'publish'
+# CDN expiry, 10mins
+max_age = '600'
 mimetypes.add_type('audio/ogg', '.ogg')
 mimetypes.add_type('application/x-yaml', '.yaml')
 mimetypes.add_type('application/x-yaml', '.yml')
@@ -43,7 +45,8 @@ for root, subs, files in os.walk('publish'):
             if tim < lst:
                 continue
         print('uploading: ' + lcl + ' => ' + blb + ' (' + typ + ')')
-        cnt = ContentSettings(content_type=typ)
+        age = 'max-age=' + max_age
+        cnt = ContentSettings(content_type=typ, cache_control=age)
         blob_client.create_blob_from_path(container, blb, lcl, content_settings=cnt)
 
 # remove unreferenced blobs
