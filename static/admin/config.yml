@@ -1,12 +1,12 @@
 backend:
    name: github
    branch: master
-   repo: phlash/hugo-test
+   repo: phlash/www.ashbysoft.com
    base_url: https://phil.ashbysoft.com
 
 publish_mode: editorial_workflow
 media_folder: "static/images/upload"
-public_folder: "/hugo-test/images/upload"
+public_folder: "/www.ashbysoft.com/images/upload"
 
 collections:
    - name: "posts"

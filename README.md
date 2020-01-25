@@ -1,5 +1,6 @@
-# hugo-test
-Playing with Hugo static site generation &amp; netlify-cms
+# www.ashbysoft.com
+Static site version of www.ashbysoft.com, powered by [GoHugo](https://gohugo.io) &amp;
+[netlify-cms](https://www.netlifycms.org/)
 
 ## Hugo on Debian
 The stable package is way out of date (0.18-1), but the extended Linxu64 binary available here installs ok:

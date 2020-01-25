@@ -5,7 +5,7 @@
 
 languageCode = "en-us"
 title = "(Ashbysoft *)"
-baseurl = "https://phil.ashbysoft.com/hugo-test/"
+baseurl = "https://phil.ashbysoft.com/www.ashbysoft.com/"
 theme = "m10c"
 
 cleandestinationdir = true
