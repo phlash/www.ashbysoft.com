@@ -1,7 +1,8 @@
 #! /bin/sh
 
-# Pull latest
-git pull
+# Pull latest (sadly git pull doesn't have an exit code for 'up to date')
+res=`git pull`
+[ "$res" = "Already up to date." ] && exit 0
 
 # Build for local server
 /usr/local/bin/hugo
