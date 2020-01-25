@@ -6,7 +6,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "static/images/upload"
-public_folder: "/www.ashbysoft.com/images/upload"
+public_folder: "/images/upload"
 
 collections:
    - name: "posts"
