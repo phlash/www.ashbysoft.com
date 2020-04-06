@@ -1,8 +1,0 @@
-So [Chrome will soon be flagging /any/ web
-content](https://www.theregister.co.uk/2018/02/08/google_chrome_http_shame/ "wikilink")
-served over plain HTTP as not secure. I suspect other browsers will
-follow soon enough, so it\'s time to ensure everything served from here
-is over TLS\... cue montage of rapid terminal activity\... aand it\'s
-done. thanks Let\' Encrypt and NGiNX for handling SNI so easily! If you
-have content hosted with us, and anything seems to have gone a bit
-weird, please [let us know](mailto:support@ashbysoft.com "wikilink").

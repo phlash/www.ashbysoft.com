@@ -1,5 +1,0 @@
-[Phil](Phlash "wikilink") got down to some Linux voodoo over the
-Christmas holiday, in order to run a slightly too old application suite
-(Rivendell Audio 1.7.2) on a supported distribution (Ubuntu 14.04 LTS),
-and without the aid of a package manager safety net (whoo!), it turns
-out [Chroot](Rivendell_Chroot "wikilink") is a winner.

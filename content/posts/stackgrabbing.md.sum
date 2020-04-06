@@ -1,5 +1,0 @@
-Ok, I\'m sorry about the subject line, just how
-[Phil\'s](Phlash "wikilink") brain works I\'m afraid. I\'ve been amusing
-myself recently by writing a [memory allocation
-tracer](StackGrabbing "wikilink") in VC++ to track down some pesky
-memory leaks in a large app.

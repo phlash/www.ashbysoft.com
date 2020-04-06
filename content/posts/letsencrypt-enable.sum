@@ -1,6 +1,0 @@
-Now that [Let\'s Encrypt](https://letsencrypt.org/ "wikilink") is
-enabled by default in the majority of mainstream browsers, this site can
-switch to HTTPS by default - today [Phil](Phlash "wikilink") threw the
-switch to make that happen :) Let us know
-[mailto:the.guys\@ashbysoft.com](mailto:the.guys@ashbysoft.com "wikilink")
-if you are seeing certificate warnings!
