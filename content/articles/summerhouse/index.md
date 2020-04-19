@@ -1,7 +1,7 @@
 ---
 title: Summerhouse for 2020!
 date: 2020-04-19T13:25:10.000Z
-summary: 2 weeks off work and Coronovirus keeping us at home - let's build something!
+summary: 2 weeks off work and Coronavirus keeping us at home - let's build something!
 ---
 ## First buy a kit..
 
