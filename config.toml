@@ -6,7 +6,7 @@
 languageCode = "en-us"
 title = "(Ashbysoft *)"
 baseurl = "https://phil.ashbysoft.com/www.ashbysoft.com/"
-theme = "m10c"
+theme = ["m10c", "reveal-hugo"]
 
 cleandestinationdir = true
 MetaDataFormat = "yaml"
@@ -15,6 +15,11 @@ DefaultContentLanguage = "en"
 Paginate = 10
 googleAnalytics = ""
 enableRobotsTXT = true
+
+[outputFormats.Reveal]
+    baseName = "index"
+    mediaType = "text/html"
+    isHTML = true
 
 [menu]
   [[menu.main]]
@@ -31,6 +36,11 @@ enableRobotsTXT = true
     identifier = "posts"
     title = "Blog"
     url = "/posts/"
+
+  [[menu.main]]
+    identifier = "presentations"
+    title = "Presentations"
+    url = "/presentations/"
 
 [sitemap]
   changefreq = "monthly"
