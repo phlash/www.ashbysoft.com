@@ -1,7 +1,7 @@
 +++
-title = "Threat Modelling"
-summary = "Slides used for OWASP chapter talk in 2019"
-date = 2020-05-25T15:43:41Z
+title = "Threat modelling"
+summary = "OWASP chapter talk given in 2019"
+date = 2020-05-25T16:53:36Z
 layout = "bundle"
 outputs = ["Reveal"]
 
@@ -12,7 +12,7 @@ outputs = ["Reveal"]
 	embedded = true
 +++
 
-# What Could Possibly Go Wrong?
+## What Could Possibly Go Wrong?
 
 Threat Modelling in the 21st Century
 
@@ -23,7 +23,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# TL;DR
+## TL;DR
 
  * What is a threat model?
  * Why should we have one?
@@ -40,7 +40,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Threat Model(l)ing
+## Threat Model(l)ing
 
  * Spot quiz :)
 
@@ -59,7 +59,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# WAT?
+## WAT?
 
 
 
@@ -70,7 +70,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# An Attackers View of Your System
+## An Attackers View of Your System
 
  * Their ‘business plan’ to attack your system at lowest risk and highest return on investment.
 
@@ -86,7 +86,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# In Context..
+## In Context..
 
  * Threat Model →
  * Risk Assessment →
@@ -110,7 +110,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# AKA..
+## AKA..
 
  * Gartner’s ‘Adaptive Security Architecture’ (BS!)
  * Predict, Prevent, Detect, Respond (PPDR) →
@@ -126,7 +126,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# WHY?
+## WHY?
 
 
 
@@ -137,7 +137,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Effective Security
+## Effective Security
 
  * Well understood
  * Managed risks
@@ -155,7 +155,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Efficient Security
+## Efficient Security
 
  * Prioritised, cost effective controls
  * Estimates of residual risk in business terms
@@ -172,7 +172,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# HOW?
+## HOW?
 
 
 
@@ -183,7 +183,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# “Think Like an Attacker”
+## “Think Like an Attacker”
 
  * Build a model of attacks
  * Estimate cost to attacker
@@ -202,7 +202,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Outside In Modelling
+## Outside In Modelling
 
  * Threat actors, motivations
  * Target data and flows across..
@@ -224,7 +224,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Inside Out Modelling
+## Inside Out Modelling
 
  * Components
  * Weaknesses
@@ -246,7 +246,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Samples!
+## Samples!
 
 
 
@@ -257,7 +257,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Attack Trees
+## Attack Trees
 
  * Created by Bruce Schneier in 1999
  * Common in Outside In models
@@ -289,7 +289,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Iterative Refinement
+## Iterative Refinement
 
  * Created by NCC during consulting work
  * Common in Inside Out models
@@ -321,7 +321,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# WHEN?
+## WHEN?
 
 
 
@@ -332,7 +332,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Greenfield: Part of the SDLC
+## Greenfield: Part of the SDLC
 
  * First model → during first design cycle!
  * Refreshed → material changes in…
@@ -350,7 +350,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Brownfield: Introduce to the SDLC
+## Brownfield: Introduce to the SDLC
 
  * As soon as possible within SDLC
  * Always better to have a model than nothing!
@@ -368,7 +368,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# DONE?
+## DONE?
 
 {{% note %}}
 {{% /note %}}
@@ -377,7 +377,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Model Contains..
+## Model Contains..
 
  * Quantified risks
  * Testable attacks
@@ -394,7 +394,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Model Checking
+## Model Checking
 
  * Security Testing
    * Red / Blue teaming
@@ -413,7 +413,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# CLOUD?
+## CLOUD?
 
 
 
@@ -424,7 +424,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# Can we SEP it?
+## Can we SEP it?
 
  * Somebody Else’s Problem: AWS/Google/Microsoft?
  * Nope!
@@ -445,7 +445,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# ME :)
+## ME :)
 
  * Phil Ashby (aka Phlash)
  * Technical Architect @ GBG Plc.
@@ -463,7 +463,7 @@ Threat Modelling in the 21st Century
 ---
 
 
-# YOU?
+## YOU?
 
  * Questions?
 
