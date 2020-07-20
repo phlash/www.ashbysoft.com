@@ -1,6 +1,6 @@
 ---
 title: Phlash
-date: 2019-08-11T20:01:18.000Z
+date: 2020-07-20T16:32:18.000Z
 summary: The old, bald man..
 ---
 The Old Bald Man :)
@@ -16,8 +16,8 @@ He's enjoying being "grandad" when he's home (not often enough :-),
 and considers himself reasonably experienced in this field with six
 children & three grandchildren (the last time he counted).
 
-Phil works as a technical architect for [GB Group](http://www.gbgplc.com),
-looking after the design of their services.
+Phil was a technical architect for [GB Group](http://www.gbgplc.com),
+looking after the design of their services. He is now happily retired!
 
 Phil is also a founder of (Ashbysoft *), and when he's not playing
 with the kids, he can usually be found playing with his computer, having
@@ -42,8 +42,11 @@ You can also find Phil on
 Stuff
 -----
 
-I do stuff outside the day job, in particular:
+I do stuff, in particular:
 
+-   contribute to Open Source Software, I'm especially pleased that I now
+    have code in the Github Arctic Code Vault :)
+    [{{< figure src="../../images/arctic-backup.png" >}}](https://github.com/phlash)
 -   [Funcube](https://funcube.org.uk): I'm a developer on this combined
     amateur radio / educational satellite development team - five launched,
     others in the pipeline..
