@@ -2,8 +2,8 @@
 title: Wireplay calling - hello 1996!
 summary: >-
   A recently recovered BT Wireplay trial pack from Slash's loft - let's open it
-  up :)
-date: 2020-01-25T17:13:41.884Z
+  up :) BONUS: Phlash had one of the original CD-RWs as sent to the pressing plant!
+date: 2020-08-04T10:13:41.884Z
 ---
 It's amazing the things you find in people's lofts, in this case a pristine 1996 BT Wireplay trial pack, let's see what you got way back when..
 
@@ -33,7 +33,7 @@ Opening the CD case we find more paperwork at the front, inlcuding some sweet un
 
 So you want a copy of the CD contents right... [Come Get Some!](/wireplay%20stuff.zip) NB: this ZIP contains both the trial (V1.4A) and the later updated (V1.5H) client.
 
-## Bonus find!
+## Bonus finds!
 
 Stu also had the install CD for the first V2.0 Windows & DOS clients:
 
@@ -42,6 +42,10 @@ Stu also had the install CD for the first V2.0 Windows & DOS clients:
 ![](../../images/upload/wireplay-2.0-back.jpg)
 
 ![](../../images/upload/wireplay-2.0-cd.jpg)
+
+Phil just found this in his garage, one of the CD-RWs created to send to the pressing plant (this is probably an escrow copy, archive no 2):
+
+![](../../images/upload/wireplay-trial-cd-rw.jpg)
 
 ## So do they still run?
 
