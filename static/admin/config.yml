@@ -1,6 +1,6 @@
 backend:
    name: github
-   branch: master
+   branch: trunk
    repo: phlash/www.ashbysoft.com
    base_url: https://phil.ashbysoft.com
 
