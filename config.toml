@@ -3,6 +3,8 @@
 # while hugo itself says /nothing/ about being unable to do sh*t for you. Grr :(
 # https://gohugo.io/troubleshooting/faq/
 
+# remember to 'git submodule update --init --recursive' before running Hugo!
+
 languageCode = "en-us"
 title = "(Ashbysoft *)"
 baseurl = "https://phil.ashbysoft.com/www.ashbysoft.com/"
