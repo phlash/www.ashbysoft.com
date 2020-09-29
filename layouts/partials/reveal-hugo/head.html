@@ -1,0 +1,10 @@
+<!-- Insert specified header_image in top-left corner of slides, if requested -->
+{{ if $.Param "header_image" }}
+<style>
+.reveal .slides {
+    background-image: url('{{ $.Param "header_image" }}');
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+</style>
+{{ end }}
