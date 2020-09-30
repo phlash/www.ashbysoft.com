@@ -35,19 +35,19 @@ Creating an open platform in space
 
 ## FUNcube Past
 (learning from the ghosts of previous missions)
+ * Ambition pays off :)
  * Timing is everything!
  * Testing is also everything!
- * Team size matters - close working, and
- * Documentation matters - a good ICD/API!
- * Ambition pays off :)
+ * Team size matters - close working is effective
+ * Documentation matters - multi-party confidence
  * Engagement is limited :(
 
 {{% note %}}
- * Launch dates moved, then moved...
+ * AO-40 telemetry, complex control, lots of data=&gt;popular!
+ * Launch dates, delivery, exit delays, watchdogs, freq!
  * Serious bug found after 2 years testing (FC-1)
  * Good progress at get-togethers (jelly babies)
  * Pain when working with partial docs and others (FC-2)
- * AO-40 telemetry on tiny MCU, lots of data, popular!
  * Only a few 'operators', exclusivity in dev.
 {{% /note %}}
 
@@ -56,19 +56,23 @@ Creating an open platform in space
 ## FUNcube Present
 (creating our new mission)
  * {{< frag c="Do something new and ambitious..." >}}
- * {{< frag c="Keep the small team(s), but..." >}}
- * {{< frag c="Address engagement and docs challenge..." >}}
- * {{< frag c="Build a documented open space platform..." >}}
- * {{< frag c="A set of sensors, popular MCUs & APIs..." >}}
- * {{< frag c="So *everyone* can run code in space!" >}}
+ * {{< frag c="Address engagement and documentation..." >}}
+ * {{< frag c="Keep small teams, keep things moving..." >}}
+ * {{< frag c="Build & launch an open space platform..." >}}
+ * {{< frag c="Using managed, modular, popular tech..." >}}
+ * {{< frag c="Materially lowering the barrier to entry..." >}}
+ * {{< frag c="So *anyone* can do experiments in space!" >}}
 
 {{% note %}}
  * Don't throw away the good stuff
- * NB: teams plural, not just us :)
  * Work openly on docs and technologies to..
- * Everything in github from the start (PRs welcome)
- * Support parallel working / experiment creation!
- * Choose MCUs with low cost of entry, open dev kits..
+   * Everything in github from the start (PRs welcome)
+ * NB: teams plural, not just us :)
+ * Support parallel working / experiment creation
+ * Open platform separates launch from experiments
+ * Choose MCUs with low cost of entry, open dev kits
+ * Shipping our own dev kit/flatsat for testing
+ * Extending on STEM ambitions/individuals/orgs
 {{% /note %}}
 
 ---
