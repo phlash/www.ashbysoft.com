@@ -3,4 +3,4 @@
 	url = https://github.com/vaga/hugo-theme-m10c.git
 [submodule "themes/reveal-hugo"]
 	path = themes/reveal-hugo
-	url = git@github.com:dzello/reveal-hugo.git
+	url = https://github.com/dzello/reveal-hugo.git
