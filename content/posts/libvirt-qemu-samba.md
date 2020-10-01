@@ -93,7 +93,9 @@ OK, here's the full list of things to make user-mode SMB work with libvirt/virt-
    ```
 
 This should be it - fire up your VM, ensure you have virtio network drivers installed (part of the OS
-unless you are on Win7 - grab them from [Fedora Virtio-Win]() if you are) and map that drive:
+unless you are on Win7 - grab them from
+[Fedora Virtio-Win](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/)
+if you are) and map that drive:
 ```
 C:\> net use X: \\10.0.2.4\qemu
 ```
