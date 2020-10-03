@@ -1,6 +1,7 @@
 ---
 title: Martin
 date: 2009-04-14T11:34:27.000Z
+author: Martin
 summary: Email <<martin@ashbysoft.com>>
 ---
 Email: <<martin@ashbysoft.com>>

@@ -1,6 +1,7 @@
 ---
 title: Bosch SMS Disassembly
 date: 2016-12-05T20:54:30.000Z
+author: Phlash
 summary: >
   Phil] just experienced a dishwasher failure, it started tripping
   the house power and thus some disassembly was required.

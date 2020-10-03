@@ -1,5 +1,6 @@
 ---
 title: IlluminatedGuitar
+author: Robert
 date: 2009-04-14T11:34:27.000Z
 summary: Internal lighting for a Wesley PE200wh acrylic guitar - oh yeah.
 ---

@@ -1,6 +1,7 @@
 ---
 title: Rivendell_Chroot
 date: 2015-12-28T10:20:27.000Z
+author: Phlash
 summary: >
   [Phil](Phlash "wikilink") got down to some Linux voodoo over the
   Christmas holiday, in order to run a slightly too old application suite

@@ -1,6 +1,7 @@
 ---
 title: HDMI Switch Reversing
 date: 2017-05-26T22:33:45.000Z
+author: Phlash
 summary: >
   Long time, no blog entry, but Phil has been playing
   with some toys since Christmas, including an

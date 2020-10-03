@@ -1,6 +1,7 @@
 ---
 title: CMI-8738 vs Jack
 date: 2011-04-17T18:39:34.000Z
+author: Phlash
 summary: >
   Whilst playing with Ubuntu on the PC in [TheShed](TheShed "wikilink")
   studio I finally discovered a way to [get digital audio input to work

@@ -1,5 +1,6 @@
 ---
 title: Wireplay calling - hello 1996!
+author: Slash
 summary: >-
   A recently recovered BT Wireplay trial pack from Slash's loft - let's open it
   up :) BONUS: Phlash had one of the original CD-RWs as sent to the pressing plant!

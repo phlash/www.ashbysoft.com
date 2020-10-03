@@ -1,6 +1,7 @@
 ---
 title: RivendellHacking
 date: 2011-01-31T19:01:07.000Z
+author: Phlash
 summary: >
   Yeah I know, you all thought the site was dead and stuff\... anyhow, as
   part of my role looking after the tech at [Felixstowe

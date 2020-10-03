@@ -1,6 +1,7 @@
 ---
 title: Apeman H45 Trail Camera Insides
 date: 2020-07-04T17:20:30.000Z
+author: Phlash
 summary: I needed to factory reset a borrowed trail cam but the owner forgot the PIN..
 
 ---

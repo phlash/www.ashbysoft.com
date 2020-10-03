@@ -1,5 +1,6 @@
 ---
 title: PlayingWithFire
+author: Joseph
 date: 2010-10-08T08:24:13.000Z
 summary: Joe's old band page..
 ---

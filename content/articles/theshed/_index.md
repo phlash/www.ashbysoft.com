@@ -1,8 +1,15 @@
 ---
 title: TheShed
-date: 2009-07-12T21:34:06.000Z
+author: Phlash
+date: 2020-04-19T21:34:06.000Z
 summary: Music studio in the garden!
 ---
+Update - it's gone :-/
+======================
+
+The Shed studio has now been replaced, after 15 years service to
+hundreds of local band members, with [The summerhouse]({{< relref "summerhouse" >}})
+
 The History
 ===========
 

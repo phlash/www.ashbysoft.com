@@ -2,6 +2,7 @@
 title: Libvirt, QEMU & Samba
 summary: Finally getting a working user-mode shared folder!
 date: 2020-10-01T16:05:00.000Z
+author: Phlash
 ---
 
 ## Trying to be different again?

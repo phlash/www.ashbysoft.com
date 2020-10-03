@@ -1,6 +1,7 @@
 ---
 title: "Face Recognition"
 date: 2019-12-28T10:23:34Z
+author: Phlash
 summary: >
   Phil recently noticed that Google Picasa has been
   discontinued since 2016 on all platforms, and he's heavily invested in

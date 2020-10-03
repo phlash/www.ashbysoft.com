@@ -1,6 +1,7 @@
 ---
 title: "Blackhole DNS"
 date: 2017-08-10T22:16:10Z
+author: Phlash
 summary: >
   Over the last couple of months, Phil has been helping Joseph track
   down a credential leak problem using various network defence techniques.

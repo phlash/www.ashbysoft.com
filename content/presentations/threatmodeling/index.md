@@ -5,6 +5,8 @@ date = 2020-05-25T16:53:36Z
 layout = "bundle"
 outputs = ["Reveal"]
 
+author = "Phlash"
+
 [reveal_hugo]
 	theme = "moon"
 	transistion = "zoom"

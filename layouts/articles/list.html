@@ -10,6 +10,7 @@
           <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }} {{ .ReadingTime }} min read -
             {{ .PublishDate.Format "Jan 2, 2006" }}
+			{{ if .Params.author }} - by <a href="{{ relref  . .Params.author }}">{{ .Params.author }}</a>{{ end }}
           </span>
           <span class="posts-list-item-description">
             {{ .Summary }}

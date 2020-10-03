@@ -1,5 +1,6 @@
 ---
 title: Hacking Picasa3
+author: Phlash
 date: 2012-03-13T01:00:25.000Z
 ---
 The Need

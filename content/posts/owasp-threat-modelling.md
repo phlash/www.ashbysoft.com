@@ -1,6 +1,7 @@
 ---
 title: A talk on threat modelling
 date: 2020-05-24T21:48:36.000Z
+author: Phlash
 summary: Phil did a talk last year for the local OWASP chapter..
 ---
 

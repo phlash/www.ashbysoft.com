@@ -1,6 +1,7 @@
 ---
 title: OBiLINE
 date: 2015-06-07T21:00:25.000Z
+author: Phlash
 summary: >
   While looking for a usable cheap FXO port to connect the PSTN to his
   home server, [Phil](Phlash "wikilink") came across the OBIHAI product

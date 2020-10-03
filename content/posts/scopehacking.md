@@ -1,6 +1,7 @@
 ---
 title: ScopeHacking
 date: 2014-04-18T18:50:26.000Z
+author: Phlash
 summary: >
   Yup - Easter holidays allow one time to play with one\'s own toys, so
   just for the fun (and practice) I [reverse engineered the

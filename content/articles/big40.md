@@ -1,6 +1,7 @@
 ---
 title: Big40
 date: 2009-04-14T11:34:28.000Z
+author: Slash
 summary: The chaps at 40..
 ---
 Stuart's Party

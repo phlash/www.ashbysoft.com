@@ -5,6 +5,7 @@ date = 2020-09-29T13:54:00Z
 layout = "bundle"
 outputs = ["Reveal"]
 
+author = "Phlash"
 header_image = "FUNcube-Logo.png"
 
 [reveal_hugo]

@@ -1,5 +1,6 @@
 ---
 title: TheShed__PartIII
+author: Phlash
 date: 2009-04-14T11:34:37.000Z
 summary: fittings, and fancy acoustics
 ---

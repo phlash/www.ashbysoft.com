@@ -1,5 +1,6 @@
 ---
 title: Phlash
+author: Phlash
 date: 2020-07-20T16:32:18.000Z
 summary: The old, bald man..
 ---

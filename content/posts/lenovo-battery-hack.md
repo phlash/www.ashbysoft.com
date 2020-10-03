@@ -1,6 +1,7 @@
 ---
 title: Lenovo Battery Hack
 date: 2016-06-03T19:31:21.000Z
+author: Phlash
 summary: >
   Yep, that's actually a post title. it turns out that Phil's laptop
   is fussy about the brand of battery you use, or to put another way:

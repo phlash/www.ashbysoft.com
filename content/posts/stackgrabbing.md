@@ -1,6 +1,7 @@
 ---
 title: StackGrabbing
 date: 2014-02-21T08:45:09.000Z
+author: Phlash
 summary: >
   Ok, I\'m sorry about the subject line, just how
   [Phil\'s](Phlash "wikilink") brain works I\'m afraid. I\'ve been amusing

@@ -15,7 +15,10 @@
       {{ range first 5 .Site.RegularPages }}
       <li class="posts-list-item">
         <span><a class="posts-list-item-title" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></span>
-        <span class="posts-list-item-description">{{ .PublishDate.Format "Jan 2, 2006" }}</span>
+        <span class="posts-list-item-description">
+			{{ .PublishDate.Format "Jan 2, 2006" }}
+			{{ if .Params.author }} - by <a href="{{ relref  . .Params.author }}">{{ .Params.author }}</a>{{ end }}
+		</span>
         <span class="posts-list-item-description">{{ .Summary }}</span>
       </li>
       {{ end }}

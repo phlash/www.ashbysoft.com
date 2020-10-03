@@ -1,5 +1,6 @@
 ---
 title: Thomas
+author: Thomas
 date: 2009-04-14T11:34:28.000Z
 summary: Email <<thomas@ashbysoft.com>>
 ---

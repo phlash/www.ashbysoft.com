@@ -1,6 +1,7 @@
 ---
 title: ZTE-G X930 Insides
 date: 2011-02-12T17:18:44.000Z
+author: Phlash
 summary: >
   [Tom](Thomas "wikilink") broke the USB connector off his phone, so I had
   to disassemble it (no I really did!), and took the opportunity to take

@@ -1,5 +1,6 @@
 ---
 title: Slash
+author: Slash
 date: 2013-06-10T23:51:29.000Z
 summary: all about Stu
 ---
