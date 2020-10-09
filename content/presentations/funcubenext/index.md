@@ -81,7 +81,7 @@ Creating an open platform in space
 ## FUNcube Future
 (what might that look like?)
 
-TBD: diagram from Jason!
+{{< figure src="OBC.png" title="proposed OBC architecture" width="600" height="400" >}}
 
 {{% note %}}
  * Here's where we are after 1 month thinking (mostly J!)
