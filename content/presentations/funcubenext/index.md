@@ -23,13 +23,15 @@ Creating an open platform in space
 (with apologies to Mr Dickens)
 
 {{% note %}}
- * Not very technical (yet!)
+ * Welcome back from lunch..
+ * Gentle/non-technical start
  * Will cover four areas:
    * (past/present/future/actions)
-   * A wee bit of history/learnings
-   * Mission brief (to boldly go...)
-   * What that might look like
-   * Involvement/engagement points
+     * cf:Christmas Carol
+   * lessons learned
+   * mission brief (to boldly go...)
+   * early design thoughts
+   * involvement/engagement points
 {{% /note %}}
 
 ---
@@ -41,15 +43,15 @@ Creating an open platform in space
  * Testing is also everything!
  * Team size matters - close working is effective
  * Documentation matters - multi-party confidence
- * Engagement is limited :(
+ * Engagement was limited :(
 
 {{% note %}}
- * AO-40 telemetry, complex control, lots of data=&gt;popular!
- * Launch dates, delivery, exit delays, watchdogs, freq!
- * Serious bug found after 2 years testing (FC-1)
- * Good progress at get-togethers (jelly babies)
- * Pain when working with partial docs and others (FC-2)
- * Only a few 'operators', exclusivity in dev.
+ * AO-40, obc schedules, recovery/debug, dongle, telemetry variation
+ * clock phase, watchdog pain, pod exit, launch ducks, engagement
+ * serious bug after 2 years, community test tooling
+ * get-togethers (jelly babies), small teams
+ * pain when working with partial docs and others (FC-2)
+ * only a few 'operators', dev/experiment exclusivity
 {{% /note %}}
 
 ---
