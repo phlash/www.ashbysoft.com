@@ -1,0 +1,3 @@
+Contact: mailto:theguys@ashbysoft.com
+Preferred-Languages: en,fr
+Canonical: https://www.ashbysoft.com/security.txt
