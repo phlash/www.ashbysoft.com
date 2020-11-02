@@ -1,6 +1,6 @@
 ---
 title: GEO Trio II In-Home-Display Insides
-date: 2020-10-31T17:20:30.000Z
+date: 2020-11-02T12:53:30.000Z
 author: Phlash
 summary: I'd like to build my own modules for this extensible display..
 
@@ -55,6 +55,10 @@ Next to the WiFi module connector is another set of pads that are accessible
 without disassembling the device - these are very likely a JTAG (AVR layout)
 connector for programming/upgrades, I still need to buzz these out to find
 grounded pads, which will confirm this guess.
+
+__[update]__: the pads are indeed an
+[ARM-10 JTAG/SWD](https://rowley.zendesk.com/hc/en-us/articles/210033613-What-is-the-pinout-of-the-ARM-10-pin-connector-)
+(dual mode) connector, confirmed by grounding of pads 3,5,9 :)
 
 What happens next?
 ==================
