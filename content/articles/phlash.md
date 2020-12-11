@@ -1,7 +1,7 @@
 ---
 title: Phlash
 author: Phlash
-date: 2020-07-20T16:32:18.000Z
+date: 2020-12-11T16:32:18.000Z
 summary: The old, bald man..
 ---
 The Old Bald Man :)
@@ -15,7 +15,7 @@ Phil is 5' 7", in his early 50's, with hazel eyes & dark brown hair
 
 He's enjoying being "grandad" when he's home (not often enough :-),
 and considers himself reasonably experienced in this field with six
-children & three grandchildren (the last time he counted).
+children & four grandchildren (the last time he counted).
 
 Phil was a technical architect for [GB Group](http://www.gbgplc.com),
 looking after the design of their services. He is now happily retired!
