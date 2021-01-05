@@ -71,3 +71,10 @@ holds certificates that it expects to be verified, etc. etc. and if the
 protocol is fakeable on an ESP8266 or similar to map into MQTT packets!
 
 Anyone got a WiFi module I can look at please?
+
+__[update]__: Courtesy of an email or two with William McNicol (thanks!)
+I have purchased a WiFi module direct from GEO here:
+[GEO WiFi module](https://www.geotogether.com/consumer/product/wifi-module/)
+plugged it in and confirmed that it's sending packets to the 'net - rather
+surprisingly UDP/IP. More info once I've got the 'scope on the connector
+pins!
