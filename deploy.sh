@@ -15,10 +15,10 @@ res=`git pull`
 # Build for local server
 echo "building"
 
-/usr/local/bin/hugo || exit 1
+/usr/bin/hugo || exit 1
 
 # Build for publication
-/usr/local/bin/hugo -b https://www.ashbysoft.com/ -d publish || exit 1
+/usr/bin/hugo -b https://www.ashbysoft.com/ -d publish || exit 1
 
 # Push to Azure (in background - or Github webhook times out)
 echo "building(done)@$now"
