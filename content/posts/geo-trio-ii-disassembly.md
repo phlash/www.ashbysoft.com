@@ -1,6 +1,6 @@
 ---
 title: GEO Trio II In-Home-Display Insides
-date: 2020-11-02T12:53:30.000Z
+date: 2021-01-25T22:13:30.000Z
 author: Phlash
 summary: I'd like to build my own modules for this extensible display..
 
@@ -44,8 +44,16 @@ three for data - most likely an SPI or UART interface to a full-stack
 WiFi+TCP/IP package such as this from Radicom:
 [Radicom embedded WiFi Serial Module](http://www.radi.com/modular101.htm)
 
-which bodes well for faking stuff, as it won't be encrypted at this point
+..which bodes well for faking stuff, as it may not be encrypted at this point
 (the TLS happens on the WiFi module) :)
+
+__[update, Jan 2021]__: it's not a standard WiFi/serial module, the WiFi
+board has another user-programmable device, an ESP8285, running more Geo code..
+this appears to handle asynchronous comms and has a separate command and
+control protocol back to the main system. This makes sense if you wanted
+to use a different network technology later on, and also holds promise
+that I can still emulate and transmit my own data - quite possibly by
+reprogramming the existing ESP8285 =) See below...
 
 The unpopulated devices may be related to developing SMETS2 standards for
 the radio interface, or a change of display technology, moving the LCD
@@ -56,25 +64,48 @@ without disassembling the device - these are very likely a JTAG (AVR layout)
 connector for programming/upgrades, I still need to buzz these out to find
 grounded pads, which will confirm this guess.
 
-__[update]__: the pads are indeed an
+__[update, Dec 2020]__: the pads are indeed an
 [ARM-10 JTAG/SWD](https://rowley.zendesk.com/hc/en-us/articles/210033613-What-is-the-pinout-of-the-ARM-10-pin-connector-)
 (dual mode) connector, confirmed by grounding of pads 3,5,9 :)
 
-What happens next?
-==================
+Investigating the WiFi module
+=============================
 
-I really want to get hold of a WiFi module, which will confirm the guess
-about it being a complete WiFi+TCP/IP design and provide the pinout with
-more certainty, then it's a job for a logic analyser to snaffle the data
-while it's plugged in and confirm if plain text is available, if the IHD
-holds certificates that it expects to be verified, etc. etc. and if the
-protocol is fakeable on an ESP8266 or similar to map into MQTT packets!
-
-Anyone got a WiFi module I can look at please?
-
-__[update]__: Courtesy of an email or two with William McNicol (thanks!)
+__[update, Dec 2020]__: Courtesy of an email or two with William McNicol (thanks!)
 I have purchased a WiFi module direct from GEO here:
 [GEO WiFi module](https://www.geotogether.com/consumer/product/wifi-module/)
 plugged it in and confirmed that it's sending packets to the 'net - rather
 surprisingly UDP/IP. More info once I've got the 'scope on the connector
 pins!
+
+__[update, Jan 2021]__: I finally got round to probing the WiFi module while it's
+connected to the main system, and yes, it's a simple UART @ 115k2 8n1 with both
+Tx and Rx lines. Attaching an FTDI FT232 at 3v3 logic levels gives me bytes, oh
+so many bytes... so what to do with them?
+
+Relationship between serial traffic and network
+-----------------------------------------------
+
+I thought it best to try and understand the relationship between traffic on the
+serial interface and the network, so I hooked up the FT232 and my network sniffer
+to a common clock source (thanks NTP!) and watched everything for the first few
+minutes of IHD operation.
+
+It turns out to be pretty complex - I was able to deduce some of the serial message
+format, in particular the start message marker, the length and checksum fields, which
+gave me accurate timestamps for each message, and some content boundaries. Trying to
+relate these to the UDP traffic on the other hand was not making any sense, it looks
+like the command protocol simply issues a 'connect please' request, or one of a couple
+of other requests (there are obvious request type codes), and the ESP8285 operates
+completely asychronously, sending multiple different network packets, none of which
+appear to contain much from the serial messages. There is some consistent timing that
+I have noticed:
+
+ * serial messages are typically at 10 second intervals (per message type)
+ * network packets are at 4 second intervals (per length/type)
+ * network packets are repeated 4 times, each with the same timestamp
+ * network packet timestamps appear to be related to ZigBee / meter time, but
+   I cannot see this transferred in the serial messages when it updates from
+   boot (2011) to now (2020) :=(
+
+Full details are [in my log file](/ihd-serial-tx.log) (prepare for ASCII documentation!)
