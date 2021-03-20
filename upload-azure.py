@@ -2,7 +2,7 @@
 # Push content to Azure storage for production hosting :)
 # Author: Phlash
 
-import os, datetime, mimetypes
+import os, datetime, mimetypes, hashlib, base64
 from dotenv import load_dotenv
 from azure.storage.blob import BlockBlobService, ContentSettings
 
@@ -13,6 +13,17 @@ max_age = '600'
 mimetypes.add_type('audio/ogg', '.ogg')
 mimetypes.add_type('application/x-yaml', '.yaml')
 mimetypes.add_type('application/x-yaml', '.yml')
+
+# MD5 a file
+def gethash(path):
+    with open(path,'rb') as f:
+        md5 = hashlib.md5()
+        while True:
+            d = f.read(8192)
+            if not d:
+                break
+            md5.update(d)
+        return md5.digest()
 
 # Settings/secrets are in .env file - pull 'em into environment vars
 load_dotenv()
@@ -25,7 +36,7 @@ blist = {}
 for blob in blob_client.list_blobs(container):
     blist[blob.name] = blob
 
-# iterate (and upload) contents of $publish folder, if more recent than blob
+# iterate (and upload) contents of $publish folder, if more recent than blob and md5 differs
 for root, subs, files in os.walk('publish'):
     fld = root[len(publish)+1:]
     if len(fld) > 0:
@@ -40,10 +51,22 @@ for root, subs, files in os.walk('publish'):
         lst = None
         if blb in blist:
             lst = blist[blb].properties.last_modified
-            blist.pop(blb, None)
             tim = datetime.datetime.fromtimestamp(os.path.getmtime(lcl), datetime.timezone.utc)
             if tim < lst:
+                blist.pop(blb, None)
                 continue
+            hsh = base64.b64encode(gethash(lcl)).decode('utf-8')
+            md5 = blist[blb].properties.content_settings.content_md5
+            if hsh == md5:
+                blist.pop(blb, None)
+                continue
+            msg='would push('+blb+'):last_modified='+str(lst)+',local_timestamp='+str(tim)+',md5='+md5+',hash='+hsh
+            blist.pop(blb, None)
+        else:
+            msg='would push('+blb+'):missing'
+        if os.getenv('NO_UPLOAD'):
+            print(msg)
+            continue
         print('uploading: ' + lcl + ' => ' + blb + ' (' + typ + ')')
         age = 'max-age=' + max_age
         cnt = ContentSettings(content_type=typ, cache_control=age)
