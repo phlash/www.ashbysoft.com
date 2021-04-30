@@ -23,6 +23,12 @@ enableRobotsTXT = true
     mediaType = "text/html"
     isHTML = true
 
+# https://stackoverflow.com/questions/63198652/hugo-shortcode-ignored-saying-raw-html-omitted
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
   [[menu.main]]
     identifier = "about"
