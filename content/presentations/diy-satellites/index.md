@@ -1,7 +1,7 @@
 +++
 title = "DIY Satellites"
 summary = "Ipswich Sync Developers talk given in May 2021"
-date = 2021-04-30T12:00:00Z
+date = 2021-05-18T12:00:00Z
 layout = "bundle"
 outputs = ["Reveal"]
 
@@ -40,7 +40,7 @@ The current state of the art in 'home made' satellites
    * National Oceanic & Atmospheric Administrtaion (US): https://www.noaa.gov/
    * ESA Copernicus Sentinel missions (currently at 6): https://sentinel.esa.int/web/sentinel/home
    * PlanetLabs, daily whole earth imaging: https://www.planet.com/
- * Communication (INTELSAT, EUTELSAT, STARLINK)
+ * Communication (INTELSAT/EUTELSAT, STARLINK)
    * INTernation TELecommunications SATellite organisation (now defunct)
    * EURopean TELEcommunications SATellite organisation (see a pattern?)
    * STARLINK - just a cool name from SpaceX :)
@@ -57,14 +57,14 @@ The current state of the art in 'home made' satellites
 ### 1. Background info
 #### History & sizes:Getting bigger..
 
-Sputnik-1|Intelsat-V|KA-SAT
+'57 Sputnik-1|'81 Intelsat-V|'11 KA-SAT
 -|-|-
 {{< figure src="Sputnik_1_Exploded_View.png" width="250" height="200" >}} | {{< figure src="intelsat-5a.jpg" width="250" height="200" >}} | {{< figure src="KA-SAT_Copyright_Dominique_Marques-Astrium.jpg" width="250" height="200" >}}
 
 {{% note %}}
- * Sputnik-1 58cm sphere, 83kg (mostly battery), 1W beacon, low earth orbit, 3 months in orbit (NB: nitrogen-filled!)
- * Intelsat-V (1981), 1.5x1.5x2m box, 1928kg, 15m solar panels, 1800W to 25x transceivers, geo-stationary.
- * KA-SAT (2011), 2.5x2.5.5m box, ~6000kg, 45m solar panels, 16kW to 80+ transceivers, 90GBits/sec, geo-stationary.
+ * 1957: Sputnik-1 58cm sphere, 83kg (mostly battery), 1W beacon, low earth orbit, 3 months in orbit (NB: nitrogen-filled!)
+ * 1981: Intelsat-V, 1.5x1.5x2m box, 1928kg, 15m solar panels, 1800W to 25x transceivers, geo-stationary.
+ * 2011: KA-SAT, 2.5x2.5.5m box, ~6000kg, 45m solar panels, 16kW to 80+ transceivers, 90GBits/sec, geo-stationary.
 {{% /note %}}
 
 ---
@@ -72,15 +72,15 @@ Sputnik-1|Intelsat-V|KA-SAT
 ### 1. Background info
 #### History & sizes:Getting smaller..
 
-CNES programs|ESA programs|CubeSat standard|PocketQube standard
+'98 CNES programs|'05 ESA programs|'99 CubeSat|'09 PocketQube
 -|-|-|-
 {{< figure src="myriade.gif" width="200" height="150" >}} | {{< figure src="sseti-express.jpg" width="200" height="200" >}} | {{< figure src="Cubesat2.png" width="200" height="160" >}} | {{< figure src="pocketqube.png" width="150" height="150" >}}
 
 {{% note %}}
- * CNES programmes, eg: Myriade (1998), 0.6x0.6x0.8m, ~150kg, fole out solar panels, 180W to payloads.
- * ESA programmes, eg: SSETI Express (2005), 0.6x0.6x1.0m, 62kg, 12W to 2x transceivers, low earth orbit.
- * Cubesat /standard/ (1999+), 0.1m cube, 1kg (1U=>12U modular), Cal Poly / Stanford.
- * PocketQube /standard/ (2009+), 0.05m cube, 0.25kg, Morehead Uni / Kentuck Space.
+ * 1998: Centre National d'Etudes Spatiale programmes, Myriade, 0.6x0.6x0.8m, ~150kg, fold out solar panels, 180W to payloads.
+ * 2005: European Space Agency programmes, eg: SSETI Express (2005), 0.6x0.6x1.0m, 62kg, 12W to 2x transceivers, low earth orbit.
+ * 1999: Cubesat /standard/, 0.1m cube, 1kg (1U=>12U modular), Cal Poly / Stanford.
+ * 2009: PocketQube /standard/, 0.05m cube, 0.25kg, Morehead Uni / Kentuck Space.
 {{% /note %}}
 
 ---
@@ -112,13 +112,9 @@ AMSAT-BR|AMSAT-SA|JAMSAT (JP)
 
 {{% note %}}
  * https://www.amsat.org/amsats-around-the-world/
- * US initiative providing funding, global co-ordination
-   * national bodies (AMSAT-UK, JAMSAT, etc.) obtain licences/insurance
- * global receiver network
-   * more aerials than any governmental body (even NASA!), first to receive many signals
- * HAM radio transponders
-   * facilitating both experimental work (protocols, modulation etc.) and long-distance comms (DXing)
-   * non-governmental, openly published global communications technology
+ * US initiative providing funding, global co-ordination, national bodies (AMSAT-UK, JAMSAT, etc.) obtain licences/insurance
+ * global receiver network, more aerials than any governmental body (even NASA!), first to receive many signals
+ * HAM radio transponders, facilitating both experimental work (protocols, modulation etc.) and long-distance comms (DXing), non-governmental, openly published global communications technology
  * Educational outreach (hello!)
    * STEM enthusiasts abound
    * Good contacts into educational systems/schools (lots of parents/governers/university relationships)
@@ -135,23 +131,14 @@ FC-1 QSL card | RX Dongles | Dashboard
 {{< figure src="FC1-QSL.jpg" width="300" height="225" >}} | {{< figure src="FCDboth.jpg" width="300" height="225" >}} | {{< figure src="Nayif-1-Dashboard.jpg" width="300" height="225" >}}
 
 {{% note %}}
- * 2009-2017, FC1 & subsequent iterations
+ * 2009-2017, FC1 & subsequent iterations: 1U Cubesat, ~950g, 6W to one transceiver, LEO (550km)
    * Educational outreach initiative (GB4FUN), part funded by a legacy
    * AMSAT-UK + SSETI Express folks + helpers (me!)
-   * As homebrew/HAM radio as we could make it (depending on skills and time)
-     * Cubesat standard parts for frame, solar panels, power supply/batteries, antenna+deployment system
-     * AMSAT-UK/AMSAT-NL parts for radios, power amps, compute (+software), sensors, ground station kit
-   * 1U Cubesat, ~950g, 6W to one transceiver, LEO (550km)
-   * Telemetry includes novel 'fitter' messages (store/forward 200 byte blocks) & whole orbit historical data
-      downlinked every 2 mins
-   * Turnkey solution for educational reception (antenna, FUNcube dongle [USB], SDR software)
-   * Novel (at the time) centralised data warehouse concept collecting telemetry from SDR software globally
-   * FUNcube-1 (AO-73) launched Nov 2013, still operational
-   * Overlapping development of similar FUNcube payload on UKube-1 (minus EPS and as slave device to their OBC)
-   * Success resulted in educational links and creation of Nayif-1 & JY1SAT with Emirate & Jordanian universities
-      and a HAMradio payload on ESEO (ESA) mission
+   * As homebrew/HAM radio as we could make it (depending on skills and time), standard parts for: frame, solar panels, power supply/batteries, antenna+deployment system, AMSAT-UK/NL parts for radios, power amps, sensors, compute (+software), ground station kit (dongle)
+   * Novel features: 'fitter' messages (store/forward 200 byte blocks) & whole orbit historical data downlinked every 2 mins, turnkey solution for educational reception (antenna, FUNcube dongle [USB], SDR software), centralised data warehouse collecting telemetry globally.
+   * FUNcube-1 (AO-73) launched Nov 2013, still operational, success resulted in educational links and creation of Nayif-1 & JY1SAT with Emirate & Jordanian universities and a HAMradio payload on ESEO (ESA) mission
    * Each mission added features (magnetorquer stabiliser, higher power TX, images & digital audio messages)
-   * Receivers deployed across the globe, including Antarctica (excellent as all polar orbits go by!)
+   * Receiver deployed to Antarctica (excellent as all polar orbits go by!)
    * Receiver software open sourced (eventually, delayed for various reasons)
 {{% /note %}}
 
@@ -162,12 +149,9 @@ FC-1 QSL card | RX Dongles | Dashboard
 {{< figure src="OBC.png" width="750" height="465" >}}
 
 {{% note %}}
- * 2020+, FUNcube Next, a new hope..
+ * 2020+, FUNcube Next, a new hope: https://phil.ashbysoft.com/www.ashbysoft.com/presentations/funcubenext/#/
    * More open/inclusive development process (diversity, driving the Cubesat/PocketQube standardisation process)
-   * An open platform in space, not a complete (closed) system
-   * Can launch without completion (shorter dependency chain!)
-   * 'Fly your own code' initiative, on uncommited application MCUs attached to all sensors and radios
-     * We are not alone in working towards this (SpaceTeamSat1: https://spaceteam.at/?lang=en)
+   * An open platform in space, not a complete (closed) system, enables launch without completion (shorter dependency chain!) and 'fly your own code' initiative, on uncommited application MCUs attached to all sensors and radio systems. We are not alone in working towards this (SpaceTeamSat1: https://spaceteam.at/?lang=en)
    * Early design phase (diagram!)
      * Clear separation between housekeeping processor (HP)+radios / application MCUs (legal reasons!)
      * Extended Cubesat bus, new high-speed connections, defined protocols/APIs (extended standards)
@@ -187,6 +171,8 @@ FC-1 QSL card | RX Dongles | Dashboard
  * SatNOGS: https://satnogs.org/faq/
    * DIY ground station project, founded 2014, collect as much raw data/telemetry as possible globally
    * Includes currently non-decodable signals (as raw IQ data) for analysis (cf: SpaceX video decodes)
+   * Focus on design and operation of a telemetry receiver station, plus a warehouse
+   * All open source in Python on RPi3+ (or similar) & Arduino for motor control
 {{% /note %}}
 
 ---
@@ -201,14 +187,6 @@ FC-1 QSL card | RX Dongles | Dashboard
    * Reception league table per mission ;)
    * Downloadable for long term analysis (facinating work on spin state over the years!)
    * Useful educational resource prior to direct reception to explain concepts (doppler, fading)
- * TLEs (two-line-elements, celestrak: https://celestrak.com/, NORAD [via celestrak])
-   * Position and velocity vectors for all tracked objects, proximity prediction/alerting (eek!)
-   * Prediction/modelling of visibility of satellites from ground stations (eg: gpredict)
-     * Automated control of directional aerial systems/receivers
- * Opportunities for ground-based development (eg: Polaris)
-   * Machine learning across multiple data sets identifying emergent behaviour/patterns
-   * Long term analysis of single mission data sets (eg: unexpected correlations)
-   * ML based reentry prediction allowing better future mission planning
 {{% /note %}}
 
 ---
@@ -252,26 +230,16 @@ gr-satellites|FoxTelem|r00t.cz
  * gr-satellites: https://gr-satellites.readthedocs.io/en/latest/
    * Decoders for as many satellite telemetry formats as possible, started 2015
    * Popular well-maintained codebase (thanks to EA4GPZ, Daniel Estévez), modules for GNU-radio
- * SatNOGS (see above)
-   * Focus on design and operation of a telemetry receiver station, plus a warehouse
-   * All open source in Python on RPi3+ (or similar) & Arduino for motor control
  * Foxsat & FUNcube decoders
    * FoxTelem: https://github.com/ac2cz/FoxTelem
      * Java, bundles GUI and backend together
    * FUNcube decoder: https://github.com/funcube-dev/
      * C/C++ backend and go wrappers to pipe telemetry around (used in Antarctic to re-send via QO-100..)
-   * FUNcube Dashboard: https://funcube.org.uk/working-documents/funcube-telemetry-dashboard/
-     * Bundles C/C++ backend with C#/.NET GUI (Windows only, closed source due to 3rd party licenses)
- * Satellite hunters - SpaceX, Chang'e5 & Tianwen1 telemetry: https://r00t.cz/
+ * Satellite hunters - SpaceX, Chang'e-5 & Tianwen-1 telemetry: https://r00t.cz/
    * Bleeding edge signal hunting and analysis ;)
    * First to publish decoded SpaceX Falcon-9 video from direct reception
    * Tracking Chinese missions through solar system
    * Looking at RocketLab, SpaceX Starship and Mars missions
- * FCN: slides: https://phil.ashbysoft.com/www.ashbysoft.com/presentations/funcubenext/#/
-   * Coming soon - FOSS repository (likely github)
-     * Docs / APIs / ICDs (Interface Control Document)
-     * Space segment software (housekeeping MCU, )
-     * Ground segment software (SDR, warehouse, analysis)
 {{% note %}}
 
 ---
@@ -289,8 +257,8 @@ gr-satellites|FoxTelem|r00t.cz
 
 
 {{% note %}}
- * Might go for full licence now M0IPx looks available ;)
- * Retied == more time for FUNcube!
+ * Might go for full licence now M0IPX looks available ;)
+ * Retied => more time for FUNcube!
  * See my dev.to blog post for more historical bits
  * Slides are available on my website.
 {{% /note %}}
